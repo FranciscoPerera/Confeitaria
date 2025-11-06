@@ -2,17 +2,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
   font-family: Arial, sans-serif;
 }
 
-/* Header */
 header {
   background-color: #f8b400;
   color: white;
-  padding: 20px 0;
+  padding: 15px 0;
 }
 
 header .container {
@@ -48,7 +44,6 @@ nav ul li a:hover {
   color: #333;
 }
 
-/* Estilos para a imagem */
 .image img {
   width: 100%;
   height: auto;
