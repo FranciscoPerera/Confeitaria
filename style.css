@@ -48,8 +48,8 @@ nav ul li a:hover {
   color: #333;
 }
 
-/* Estilos para a imagem hero */
-.hero-image img {
+/* Estilos para a imagem */
+.image img {
   width: 100%;
   height: auto;
   object-fit: cover;
