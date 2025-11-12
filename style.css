@@ -24,6 +24,22 @@ header h1 {
   font-size: 36px;
 }
 
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.logo img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid rgba(255,255,255,0.2);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
 nav ul {
   list-style-type: none;
   display: flex;
@@ -51,3 +67,4 @@ nav ul li a:hover {
   border-top: 3px solid #f8b400;
   border-bottom: 3px solid #f8b400;
 }
+
