@@ -66,3 +66,33 @@ nav ul li a:hover {
   border-bottom: 3px solid #f8b400;
 }
 
+.sobre-nos {
+  padding: 40px 20px;
+  background-color: #fff0e1;
+  text-align: center;
+}
+
+.paragrafo-texto {
+  max-width: 800px;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.cardapio {
+  padding: 40px 20px;
+  background-color: #fff0e1;
+  text-align: center;
+}
+
+.contato {
+  padding: 40px 20px;
+  background-color: #fff0e1;
+  text-align: center;
+}
+
+.footer {
+  background-color: #f8b400;
+  text-align: center;
+  padding: 15px 0;
+}
