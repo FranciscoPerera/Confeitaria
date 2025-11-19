@@ -58,20 +58,12 @@ nav ul li a:hover {
   color: #333;
 }
 
-.imagem {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 30px 20px;
-  background-color: #fff0e1;
-}
-
 .imagem img {
-  border: 2px solid #ffda76;
-  width: 900px;
-  height: 500px;
-  border-radius: 8px;
+  width: 100%;
+  height: auto;
   object-fit: cover;
+  border-top: 3px solid #f8b400;
+  border-bottom: 3px solid #f8b400;
 }
 
 .sobre-nos {
@@ -139,6 +131,23 @@ nav ul li a:hover {
 
 .contato h2 {
   margin-bottom: 10px;
+}
+
+.btn-cardapio {
+  display: inline-block;
+  background-color: #f8b400;
+  color: white;
+  padding: 12px 30px;
+  margin: 20px 0;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cardapio:hover {
+  background-color: #ffbb00;
 }
 
 .footer {
