@@ -58,12 +58,20 @@ nav ul li a:hover {
   color: #333;
 }
 
+.imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 20px;
+  background-color: #fff0e1;
+}
+
 .imagem img {
-  width: 100%;
-  height: auto;
+  border: 2px solid #ffda76;
+  width: 900px;
+  height: 500px;
+  border-radius: 8px;
   object-fit: cover;
-  border-top: 3px solid #f8b400;
-  border-bottom: 3px solid #f8b400;
 }
 
 .sobre-nos {
@@ -80,15 +88,57 @@ nav ul li a:hover {
 }
 
 .cardapio {
-  padding: 40px 20px;
+  padding: 30px 20px;
   background-color: #fff0e1;
   text-align: center;
 }
 
+.cardapio h2 {
+  margin-bottom: 10px;
+}
+
+.itens-cardapio{
+  display: flex;
+  gap: 10px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+}
+
+.itens-cardapio > div{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.itens-cardapio img{
+  width: 230px;
+  height: 150px;
+  border-radius: 8px;
+}
+
+.item-cardapio {
+  border: 2px solid #ffda76;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  background-color: #fff8e5;
+}
+
+.item-cardapio h3{
+  color: #ffbb00;
+}
+
 .contato {
-  padding: 40px 20px;
+  padding: 30px 20px;
   background-color: #fff0e1;
   text-align: center;
+}
+
+.contato h2 {
+  margin-bottom: 10px;
 }
 
 .footer {
