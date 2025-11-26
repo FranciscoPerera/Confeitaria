@@ -1,0 +1,1 @@
+alert('Ola, foi carregado o script!');
