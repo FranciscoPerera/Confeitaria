@@ -1,5 +1,5 @@
 // Vamos criar os elementos do html com o javascript
-
+/*
 function criarItemCardapio(titulo, descricao, preco, foto) {
 
     const divCardapio = document.createElement('div');
@@ -70,3 +70,51 @@ criarItemCardapio(
      42.00,
     'img/6.jpeg'
 )
+*/
+
+// URL da API
+const API_URL = "https://confeitaria-api-1q7p.onrender.com/confeitaria/cardapio";
+
+// Função para criar o card visualmente
+function criarItemCardapio(item) {
+    const divCardapio = document.createElement("div");
+    divCardapio.className = "item-cardapio";
+
+    const h3Titulo = document.createElement("h3");
+    h3Titulo.textContent = item.nome || "Item sem nome";
+
+    const pDescricao = document.createElement("p");
+    pDescricao.textContent = item.descricao || "Sem descrição disponível";
+    pDescricao.className = "descricao";
+
+    const pPreco = document.createElement("p");
+    pPreco.textContent = "Preço: R$ " + (item.preco?.toFixed(2) || "0,00");
+
+    const img = document.createElement("img");
+    img.src = item.foto || "img/default.jpg";
+    img.className = "img-item";
+
+    divCardapio.appendChild(h3Titulo);
+    divCardapio.appendChild(pDescricao);
+    divCardapio.appendChild(pPreco);
+    divCardapio.appendChild(img);
+
+    document.getElementById("cardapio").appendChild(divCardapio);
+}
+
+// Buscar dados da API
+async function carregarCardapio() {
+    try {
+        const response = await fetch(API_URL);
+        const data = await response.json();
+
+        console.log("Dados recebidos:", data);
+
+        data.forEach(item => criarItemCardapio(item));
+    } catch (error) {
+        console.error("Erro ao carregar cardápio:", error);
+    }
+}
+
+// Carregar ao abrir página
+carregarCardapio();
